@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD CON ARRAYS</title>
+     <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body bgcolor="C2F7E8">
+    <h1>TABLA PARA ELIMINAR Y ACTUALIZAR DATOS</h1>
+    <br>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>CORREO</th>
+                <th>DOMICILIO</th>
+                <th>CIUDAD</th>
+                <th>ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br><br>
+    <button type="button" id="show-form-btn" class="btn secondary">Formulario</button>
+    
+    <div id="form-section" class="hidden">
+        <div class="form-container">
+            <h1 class="heading"><b><u>Nuevo Registro</u></b></h1>
+            <form id="record-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Apellido:</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dom">Domicilio:</label>
+                    <input type="text" id="dom" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad:</label>
+                    <input type="text" id="city" required>
+                </div>
+                <h3 class="heading"><b><u>Presiona cancelar para cerrar el formulario</u></b></h3>
+                <h3 class="heading"><b><u>Presiona guardar para enviar el formulario</u></b></h3>
+                <div class="button-container">
+                    <button type="submit" id="submit-btn" class="send-button">Guardar</button>
+                    <div class="reset-button-container">
+                        <button type="button" id="form-cancel-btn" class="reset-button">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
